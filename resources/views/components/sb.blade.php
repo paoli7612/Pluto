@@ -1,5 +1,7 @@
-<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+<nav class="col-md-2 bg-light sidebar mt-3">
     <div class="sidebar-sticky">
-        {{ $slot }}
+        <ul class="nav">
+            {{ $slot }}
+        </ul>
     </div>
 </nav>
