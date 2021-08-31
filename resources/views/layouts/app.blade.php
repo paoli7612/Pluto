@@ -7,12 +7,9 @@
     <div id="app">
         @include('layouts.nav')
             <div class="container-fluid">
-                <div class="row">
-                    @include('layouts.side')
-                        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 mt-0 px-4 bg-white">
-                            @yield('content')
-                        </main>
-                </div>
+                <main role="main" class="pt-3 mt-0 px-4 bg-white">
+                    @yield('content')
+                </main>
             </div>
 
             <!-- Bootstrap core JavaScript
