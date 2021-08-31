@@ -1,5 +1,5 @@
-<li class="nav-item">
-    <a class="nav-link active {{ Request::is($link) ? 'active' : '' }}" href="{{ $link }}" style="min-width: 100px">
+<li class="nav-item col">
+    <a class="nav-link active {{ Request::is($link) ? 'active' : '' }}" href="{{ $link }}">
         <i class="{{ $icon }}"></i>
         {{ $title }}
     </a>
