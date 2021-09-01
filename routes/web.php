@@ -19,7 +19,7 @@ Route::get('/', function () {
     if (Auth::check())
         return redirect()->route('home');
     else
-        return view('welcome');
+        return view('home');
 });
 
 Auth::routes();
