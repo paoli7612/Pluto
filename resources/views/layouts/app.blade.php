@@ -1,20 +1,26 @@
 <!doctype html>
 <html>
 @include('layouts.head')
-<body>
-    <nav class="navbar navbar-expand-lg container">
-        <a class="navbar-brand" href="{{ url('/') }}">{{ config('app.name', 'Pluto') }}</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-align-justify"></i>
-        </button>
 
-        <x-nb>
-            <ul class="navbar-nav mr-auto">
-                <x-nbi title="Home" link="/home" />
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                @guest
+<body>
+
+    @yield('content')
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bottom navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    @guest
                     @if (Route::has('login'))
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -43,14 +49,10 @@
                         </div>
                     </li>
                 @endguest
-            </ul>
-        </x-nb>
-
-
+                </ul>
+            </div>
         </div>
     </nav>
-
-    @yield('content')
 </body>
 
 </html>
