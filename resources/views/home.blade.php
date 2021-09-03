@@ -9,6 +9,9 @@
             <div class="col-5">
                 @include('partials.all-operations')
             </div>
+            <div class="col">
+                @include('partials.accounts')
+            </div>
         </div>
     </div>
 
