@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Operation;
+use Illuminate\Filesystem\Cache;
 use Illuminate\Http\Request;
 
 class OperationController extends Controller
@@ -11,10 +12,11 @@ class OperationController extends Controller
     {
         Operation::create(
             request()->validate([
-                'value' => ['required', 'min:0'],
+                'value' => ['required'],
                 'category_id' => ['required'] 
             ])
         );
-            return redirect()->route('home');
+        request()->session()->put('category_id', request('category_id'));
+        return redirect()->route('home');
     }
 }

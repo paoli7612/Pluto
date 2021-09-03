@@ -1,3 +1,5 @@
 <div class="bg-white p-3">
-    {{ App\Models\Account::first()->count }}
+    @foreach ($accounts as $account)
+        {{ $account->count }}
+    @endforeach
 </div>
