@@ -2,7 +2,7 @@
     @csrf
     <div class="form-group">
         <label for="value">Value</label>
-        <input type="text" id="value" name="value" class="form-control" placeholder="Value">
+        <input type="text" id="value" name="value" class="form-control" placeholder="Value" autofocus>
     </div>
     <div class="form-group">
         <label for="category">Category</label>
@@ -11,6 +11,10 @@
                 <option value="{{ $category->id }}">{{ $category->title }}</option>
             @endforeach
         </select>
+    </div>
+    <div class="form-group">
+        <label for="note">Note</label>
+        <textarea class="form-control" name="note" id="note" rows="2"></textarea>
     </div>
     <div class="form-group text-right">
         <input type="submit" value="Aggiungi" class="btn btn-primary">
