@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('qwerty')
         ]);
         Account::create([
+            'name' => 'Gruppo Mediolanum',
             'user_id' => 1,
             'count' => 4000
         ]);

@@ -16,6 +16,7 @@ class CreateAccountsTable extends Migration
     {
         Schema::create('accounts', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->unique();
             $table->foreignIdFor(User::class);
             $table->float('count');
             $table->timestamps();

@@ -5,11 +5,11 @@
         <div class="col-3">
             @include('partials.new-operation')
         </div>
-        <div class="col-5">
+        <div class="col-7">
             @include('partials.all-operations')
         </div>
         <div class="col">
-            @include('partials.accounts')
+            @include('partials.all-accounts')
         </div>
     </div>
 @endsection
