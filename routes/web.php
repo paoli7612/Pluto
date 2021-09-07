@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\OperationController;
 use App\Models\Account;
+use App\Models\Category;
 use App\Models\Operation;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -27,11 +28,16 @@ Route::get('/', function () {
 Route::post('/', [OperationController::class, 'store'])->name('operation.post');
 
 Route::get('/reset', function () {
-    Operation::all()->each(function($item){
+    Operation::all()->each(function ($item) {
         $item->delete();
     });
     return redirect()->route('home');
 });
 
-Auth::routes();
+Route::get('/categories', function () {
+    return view('category.index', [
+        'categories' => Category::all()
+    ]);
+})->name('categories');
 
+Auth::routes();

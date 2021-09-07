@@ -2,7 +2,7 @@
     @csrf
     <div class="form-group">
         <label for="value">Value</label>
-        <input type="number" id="value" name="value" class="form-control" placeholder="Value" autofocus>
+        <input step="0.01" type="number" id="value" name="value" class="form-control" placeholder="Value" autofocus>
     </div>
     <div class="form-group">
         <label for="category">Category</label>
@@ -10,8 +10,8 @@
             @foreach (App\Models\Category::all() as $category)
                 <option
                     value="{{ $category->id }}"
-                    {{ request()->session()->get('category_id') == $category->id ? 'selected': ''}}
-                    >{{ $category->title }}</option>
+                    {{ request()->session()->get('category_id') == $category->id ? 'selected': ''}}>
+                    {{ $category->title }}</option>
             @endforeach
         </select>
     </div>
