@@ -13,7 +13,8 @@ class OperationController extends Controller
         Operation::create(
             request()->validate([
                 'value' => ['required'],
-                'category_id' => ['required'] 
+                'note' => [],
+                'category_id' => ['required']
             ])
         );
         request()->session()->put('category_id', request('category_id'));

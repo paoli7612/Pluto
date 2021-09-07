@@ -11,6 +11,7 @@ class Operation extends Model
 
     protected $fillable = [
         'value',
+        'note',
         'category_id'
     ];
 
@@ -36,8 +37,9 @@ class Operation extends Model
 
     public function getColorAttribute()
     {
-        if ($this->value == 0)
+        if ($this->value == 0) {
             return 'warning';
+        }
         return $this->positive ? 'success': 'danger';
     }
 }
