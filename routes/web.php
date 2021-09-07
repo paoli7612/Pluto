@@ -32,12 +32,12 @@ Route::get('/reset', function () {
         $item->delete();
     });
     return redirect()->route('home');
-});
+})->name('reset');
 
 Route::get('/categories', function () {
     return view('category.index', [
         'categories' => Category::all()
     ]);
-})->name('categories');
+})->name('category.index');
 
 Auth::routes();

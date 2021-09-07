@@ -33,12 +33,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="reset">{{ __('Reset') }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('categories') }}">{{ __('Categories') }}</a>
-                        </li>
+                        <x-n-item title="{{ __('Categories') }}" link="{{ route('category.index') }}" />
+                        <x-n-item title="{{ __('Reset') }}" link="{{ route('reset') }}" />
                     </ul>
 
                     <!-- Right Side Of Navbar -->
