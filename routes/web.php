@@ -1,11 +1,5 @@
 <?php
 
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\OperationController;
-use App\Models\Account;
-use App\Models\Category;
-use App\Models\Operation;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,25 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home', [
-        'operations' => Operation::all()->sortByDesc('created_at'),
-        'accounts' => Account::all()
-    ]);
-})->name('home');
-
-Route::post('/', [OperationController::class, 'store'])->name('operation.post');
-
-Route::get('/reset', [HomeController::class, 'areset'])->name('reset');
-Route::post('/reset', [HomeController::class, 'reset'])->name('reset');
-
-Route::get('/categories', function () {
-    return view('category.index', [
-        'categories' => Category::all()
-    ]);
-})->name('category.index');
-
-Route::get('/logout', function () {
-    return view('logout');
+    return view('welcome');
 });
-
-Auth::routes();
