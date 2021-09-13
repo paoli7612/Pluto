@@ -25,12 +25,12 @@
             </div>
 
         </div>
-    </div>
-    <div class="container row">
-        @foreach ($events as $event)
-            <div class="col-4">
-                <x-event :event="$event" />
-            </div>
-        @endforeach
+        <div class="row">
+            @foreach ($events as $event)
+                <div class="col-4">
+                    <x-event :event="$event" />
+                </div>
+            @endforeach
+        </div>
     </div>
 @endsection
