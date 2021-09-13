@@ -5478,16 +5478,16 @@
         },
         {
             "name": "facade/flare-client-php",
-            "version": "1.8.1",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/flare-client-php.git",
-                "reference": "47b639dc02bcfdfc4ebb83de703856fa01e35f5f"
+                "reference": "b2adf1512755637d0cef4f7d1b54301325ac78ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/flare-client-php/zipball/47b639dc02bcfdfc4ebb83de703856fa01e35f5f",
-                "reference": "47b639dc02bcfdfc4ebb83de703856fa01e35f5f",
+                "url": "https://api.github.com/repos/facade/flare-client-php/zipball/b2adf1512755637d0cef4f7d1b54301325ac78ed",
+                "reference": "b2adf1512755637d0cef4f7d1b54301325ac78ed",
                 "shasum": ""
             },
             "require": {
@@ -5531,7 +5531,7 @@
             ],
             "support": {
                 "issues": "https://github.com/facade/flare-client-php/issues",
-                "source": "https://github.com/facade/flare-client-php/tree/1.8.1"
+                "source": "https://github.com/facade/flare-client-php/tree/1.9.1"
             },
             "funding": [
                 {
@@ -5539,7 +5539,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-05-31T19:23:29+00:00"
+            "time": "2021-09-13T12:16:46+00:00"
         },
         {
             "name": "facade/ignition",
@@ -7917,5 +7917,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
