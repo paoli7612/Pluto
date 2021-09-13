@@ -1,7 +1,12 @@
 @props(['user'])
 
-<div class="card">
-    <div class="card-header">
-        {{ $user->name }}
-    </div>
-</div>
+<tr>
+    <td>
+        {{ $user->complete_name }}
+    </td>
+    <td>
+        <a href="{{ route('user.calendar', $user) }}">
+            Calendar
+        </a>
+    </td>
+</tr>

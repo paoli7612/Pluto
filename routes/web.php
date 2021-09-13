@@ -21,6 +21,9 @@ use App\Http\Controllers\UserController;
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/events', [EventController::class, 'index'])->name('events');
 Route::get('/users', [UserController::class, 'index'])->name('users');
+
 Route::post('/events', [EventController::class, 'store'])->name('events.new');
+
+Route::get('/users/{user}/calendar', [UserController::class, 'calendar'])->name('user.calendar');
 
 Auth::routes();
