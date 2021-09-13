@@ -5,8 +5,7 @@
         <div class="float-left">
             {{ $event->name }}
         </div>
-        <div class="float-right">
-            
+        <div class="float-right text-muted">
             {{ date('D m M', strtotime($event->date)) }}
         </div>
     </div>
