@@ -3,7 +3,7 @@
 <div class="card mb-3">
     <div class="card-header">
         <div class="float-left">
-            {{ $event->type }}
+            {{ $event->name }}
         </div>
         <div class="float-right">
             

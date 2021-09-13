@@ -24,7 +24,7 @@ class EventFactory extends Factory
     public function definition()
     {
         return [
-            'type' => 'Matrimonio',
+            'name' => 'Matrimonio Prime Rose',
             'date' => $this->faker->dateTimeThisMonth()->format('Y-m-d'),
             'arrival' => $this->faker->dateTimeThisMonth()->format('H:i:s')
         ];
