@@ -9,4 +9,9 @@ class Location extends Model
 {
     use HasFactory;
     public $timestamps = false;
+
+    public function getRouteAttribute()
+    {
+        return route('location.show', $this);
+    }
 }
