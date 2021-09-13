@@ -18,4 +18,9 @@ class EventController extends Controller
             'events' => Event::all()
         ]);
     }
+
+    public function store()
+    {
+        dd(request()->all());
+    }
 }
