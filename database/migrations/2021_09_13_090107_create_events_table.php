@@ -21,7 +21,7 @@ class CreateEventsTable extends Migration
             $table->string('name')->unique();
             $table->foreignIdFor(Type::class)->default(1);
             $table->foreignIdFor(User::class)->default(1);
-            $table->foreignIdFor(Location::class)->default(1);
+            $table->foreignIdFor(Location::class);
             $table->date('date')->nullable();
             $table->text('note')->nullable();
             $table->timestamps();

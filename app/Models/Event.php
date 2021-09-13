@@ -11,4 +11,9 @@ class Event extends Model
     protected $fillable = [
         'name', 'date', 'arrival', 'user_id'
     ];
+
+    public function location()
+    {
+        return $this->belongsTo(Location::class);
+    }
 }

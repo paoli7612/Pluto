@@ -11,7 +11,7 @@
     </div>
     <div class="card-body">
         <div>
-            Location: <b>Castel Pietra</b>
+            Location: <x-location :location="$event->location" />
         </div>
         <div>
             Valerio, Tommaso, Lorenzo

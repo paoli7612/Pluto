@@ -3,6 +3,8 @@
 namespace Database\Factories;
 
 use App\Models\Event;
+use App\Models\Location;
+use App\Models\Type;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -27,7 +29,9 @@ class EventFactory extends Factory
         return [
             'name' => $this->faker->firstName(),
             'date' => $this->faker->dateTimeThisMonth()->format('Y-m-d'),
-            'user_id' => User::all()->random()->id
+            'user_id' => User::all()->random()->id,
+            'location_id' => Location::all()->random()->id,
+            'type_id' => Type::all()->random()->id
         ];
     }
 }
