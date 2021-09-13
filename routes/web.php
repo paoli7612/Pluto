@@ -19,5 +19,6 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/events', [EventController::class, 'index'])->name('events');
+Route::post('/events', [EventController::class, 'store'])->name('events.new');
 
 Auth::routes();
