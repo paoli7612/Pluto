@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Event;
+use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Date;
@@ -24,9 +25,9 @@ class EventFactory extends Factory
     public function definition()
     {
         return [
-            'name' => 'Matrimonio Prime Rose',
+            'name' => $this->faker->firstName(),
             'date' => $this->faker->dateTimeThisMonth()->format('Y-m-d'),
-            'arrival' => $this->faker->dateTimeThisMonth()->format('H:i:s')
+            'user_id' => User::all()->random()->id
         ];
     }
 }

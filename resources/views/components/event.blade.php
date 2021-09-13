@@ -14,11 +14,8 @@
             Location: <b>Castel Pietra</b>
         </div>
         <div>
-            Waiters: <b>Valerio, Tommaso, Lorenzo</b>
+            Valerio, Tommaso, Lorenzo
         </div>
-        <div>
-            Pax(intolerances): <b>45</b>(3 vegetariani)
-        </div>
-        <div>Child: <b>0</b></div>
+        <div>Pax: <b>45</b></div>
     </div>
 </div>
