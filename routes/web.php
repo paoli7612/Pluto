@@ -22,6 +22,7 @@ use App\Http\Controllers\UserController;
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/events', [EventController::class, 'index'])->name('events');
 Route::get('/users', [UserController::class, 'index'])->name('users');
+Route::get('/locations', [LocationController::class, 'index'])->name('locations');
 
 Route::post('/events', [EventController::class, 'store'])->name('events.new');
 

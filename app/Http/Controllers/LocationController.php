@@ -11,4 +11,11 @@ class LocationController extends Controller
     {
         dd($location);
     }
+
+    public function index()
+    {
+        return view('location.index', [
+            'locations' => Location::all()
+        ]);
+    }
 }
