@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="form-group col">
                     <label>Arrival</label>
-                    <input type="time" name="arrival" class="form-control" >
+                    <input type="time" name="arrival" class="form-control">
                 </div>
                 <div class="form-group col">
                     <label>Boss</label>

@@ -21,11 +21,13 @@ class EventController extends Controller
 
     public function store()
     {
-        $att = request()->validate([
+        Event::create(request()->validate([
             'name' => ['required', 'string'],
-            'user_id' => ['exists:users,id']
-        ]);
+            'user_id' => ['required', 'exists:users,id'],
+            'date' => ['date'],
+            'arrival' => ['string']
+        ]));
 
-        dd($att);
+        return redirect()->back();
     }
 }
