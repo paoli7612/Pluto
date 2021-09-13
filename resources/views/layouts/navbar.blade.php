@@ -13,6 +13,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('events') }}">{{ __('Events') }}</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('users') }}">{{ __('Users') }}</a>
+                </li>
             </ul>
 
             <!-- Right Side Of Navbar -->
