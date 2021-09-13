@@ -20,4 +20,11 @@ class HomeController extends Controller
             return redirect()->route('login');
         }
     }
+    
+    public function account()
+    {
+        return view('account', [
+            'user' => auth()->user()
+        ]);
+    }
 }

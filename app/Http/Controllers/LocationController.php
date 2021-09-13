@@ -9,7 +9,9 @@ class LocationController extends Controller
 {
     public function show(Location $location)
     {
-        dd($location);
+        return view('location.show', [
+            'location' => $location
+        ]);
     }
 
     public function index()

@@ -14,4 +14,9 @@ class Location extends Model
     {
         return route('location.show', $this);
     }
+
+    public function getRouteKeyName()
+    {
+        return $this->slug;
+    }
 }

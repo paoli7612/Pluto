@@ -24,9 +24,11 @@ class DatabaseSeeder extends Seeder
         Type::create(['name' => 'Battesimo']);
         Type::create(['name' => 'Coffè break']);
 
-        Location::create(['name' => 'Castel Ivano']);
-        Location::create(['name' => 'Prime Rose']);
-        Location::create(['name' => 'Castel Pietra']);
+        Location::create(['name' => 'Castel Ivano', 'slug' => 'Ivano']);
+        Location::create(['name' => 'Castel Pietra', 'slug' => 'Pietra']);
+        Location::create(['name' => 'Prime Rose', 'slug' => 'Rose']);
+        Location::create(['name' => 'Prime Rose Sotto', 'slug' => 'Sotto']);
+        Location::create(['name' => 'Maso Torresella', 'slug' => 'Torresella']);
 
         User::create([
             'name' => 'Tommaso',
