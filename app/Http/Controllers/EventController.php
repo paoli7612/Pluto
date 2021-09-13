@@ -21,6 +21,11 @@ class EventController extends Controller
 
     public function store()
     {
-        dd(request()->all());
+        $att = request()->validate([
+            'name' => ['required', 'string'],
+            'user_id' => ['exists:users,id']
+        ]);
+
+        dd($att);
     }
 }
