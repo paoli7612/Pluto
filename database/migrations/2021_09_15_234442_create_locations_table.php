@@ -15,6 +15,10 @@ class CreateLocationsTable extends Migration
     {
         Schema::create('locations', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->unique();
+            $table->string('slug')->unique();
+            $table->string('address');
+            $table->string('picture')->default('');
             $table->timestamps();
         });
     }
