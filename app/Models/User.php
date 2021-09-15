@@ -19,7 +19,6 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'surname',
         'email',
         'password',
     ];
@@ -42,14 +41,4 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-    public function getCompleteNameAttribute()
-    {
-        return $this->name . ' ' . $this->surname;
-    }
-
-    public function getAdminAttribute()
-    {
-        return $this->type == 'admin';
-    }
 }
