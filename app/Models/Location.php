@@ -32,4 +32,9 @@ class Location extends Model
     {
         return route('location', $this);
     }
+
+    public function getLinkPictureAttribute()
+    {
+        return url('/img/' . $this->picture);
+    }
 }

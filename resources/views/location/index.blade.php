@@ -9,6 +9,7 @@
                         <h3>
                             {{ $location->name }}
                         </h3>
+                        <img width="100%" src="{{ $location->link_picture }}" alt="">
                     </a>
                 </div>
             </div>

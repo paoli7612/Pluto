@@ -25,12 +25,13 @@ class DatabaseSeeder extends Seeder
             'slug' => 'tommaso-paoli'
         ]);
 
-        Location::create(['name' => 'Prime Rose A']);
-        Location::create(['name' => 'Prime Rose B']);
-        Location::create(['name' => 'Castel Ivano']);
-        Location::create(['name' => 'Castel Pietra']);
-        Location::create(['name' => 'Castel Pergine']);
-        Location::create(['name' => 'Maso Torresella']);
+        Location::create(['name' => 'Prime Rose A', 'picture' => 'pr-A']);
+        Location::create(['name' => 'Prime Rose B', 'picture' => 'pr-B']);
+        Location::create(['name' => 'Castel Ivano', 'picture' => 'c-ivano.png']);
+        Location::create(['name' => 'Castel Pietra', 'picture' => 'c-pietra.png']);
+        Location::create(['name' => 'Castel Pergine', 'picture' => 'c-pergine.png']);
+        Location::create(['name' => 'Maso Torresella', 'picture' => 'm-torresella.png']);
+        Location::create(['name' => 'Cantine Rotari', 'picture' => 'ca-rotari.png']);
 
         Event::factory(60)->create();
     }
