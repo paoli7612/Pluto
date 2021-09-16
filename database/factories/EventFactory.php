@@ -3,7 +3,10 @@
 namespace Database\Factories;
 
 use App\Models\Event;
+use App\Models\Location;
+use Dflydev\DotAccessData\Data;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Date;
 
 class EventFactory extends Factory
 {
@@ -22,7 +25,9 @@ class EventFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'pax' => 45,
+            'date' => $this->faker->date(),
+            'location_id' => Location::all()->random()->id
         ];
     }
 }

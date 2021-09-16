@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Event;
 use App\Models\Location;
 use App\Models\User;
 use Illuminate\Database\Seeder;
@@ -30,5 +31,7 @@ class DatabaseSeeder extends Seeder
         Location::create(['name' => 'Castel Pietra']);
         Location::create(['name' => 'Castel Pergine']);
         Location::create(['name' => 'Maso Torresella']);
+
+        Event::factory(60)->create();
     }
 }

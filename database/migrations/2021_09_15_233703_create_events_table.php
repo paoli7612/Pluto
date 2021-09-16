@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Location;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -15,7 +16,7 @@ class CreateEventsTable extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
-            //location id
+            $table->foreignIdFor(Location::class)->default(1);
             $table->integer('pax');
             $table->date('date');
             $table->timestamps();

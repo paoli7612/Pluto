@@ -22,4 +22,14 @@ class Location extends Model
         $this->attributes['slug'] = Str::slug($value);
         $this->attributes['address'] = Str::slug($value);
     }
+
+    public function events()
+    {
+        return $this->hasMany(Event::class);
+    }
+
+    public function getRouteAttribute()
+    {
+        return route('location', $this);
+    }
 }
