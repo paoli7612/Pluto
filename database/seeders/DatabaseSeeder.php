@@ -25,8 +25,8 @@ class DatabaseSeeder extends Seeder
             'slug' => 'tommaso-paoli'
         ]);
 
-        Location::create(['name' => 'Prime Rose A', 'picture' => 'pr-A']);
-        Location::create(['name' => 'Prime Rose B', 'picture' => 'pr-B']);
+        Location::create(['name' => 'Prime Rose A', 'picture' => 'pr-A.png']);
+        Location::create(['name' => 'Prime Rose B', 'picture' => 'pr-B.png']);
         Location::create(['name' => 'Castel Ivano', 'picture' => 'c-ivano.png']);
         Location::create(['name' => 'Castel Pietra', 'picture' => 'c-pietra.png']);
         Location::create(['name' => 'Castel Pergine', 'picture' => 'c-pergine.png']);
