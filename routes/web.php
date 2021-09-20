@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CalendarController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LocationController;
@@ -31,5 +32,6 @@ Route::get('/user/{user}', [UserController::class, 'show'])->name('user');
 
 Route::get('/events', [EventController::class, 'index'])->name('events');
 Route::get('/locations', [LocationController::class, 'index'])->name('locations');
+Route::get('/calendar', [CalendarController::class, 'index'])->name('calendar');
 
 Route::get('/location/{location}', [LocationController::class, 'show'])->name('location');

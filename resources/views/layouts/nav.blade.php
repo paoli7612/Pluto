@@ -17,6 +17,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('locations') }}">{{ __('Locations') }}</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('calendar') }}">{{ __('Calendar') }}</a>
+                    </li>
                 @endauth
             </ul>
 
