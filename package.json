@@ -1,52 +1,38 @@
 {
-  "name": "material-dashboard",
-  "version": "2.1.2",
-  "description": "Material Dasboard, a Google Material Desgin. Coded by Creative Tim",
-  "main": "index.html",
-  "directories": {
-    "example": "root"
-  },
+  "name": "vue-material-dashboard",
+  "version": "1.4.0",
+  "private": true,
   "scripts": {
-    "open-app": "gulp open-app",
-    "start": "npm run open-app",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "gulp watch"
+    "serve": "vue-cli-service serve --open",
+    "dev": "npm run serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/creativetimofficial/material-dashboard.git"
-  },
-  "keywords": [
-    "material dashboard",
-    "bootstrap material admin",
-    "bootstrap material dashboard",
-    "material design admin",
-    "material design",
-    "creative tim",
-    "html dashboard",
-    "html css dashboard",
-    "web dashboard",
-    "freebie",
-    "free bootstrap dashboard",
-    "css3 dashboard",
-    "bootstrap admin",
-    "bootstrap dashboard",
-    "frontend",
-    "responsive bootstrap dashboard"
-  ],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/material-dashboard/issues"
+  "dependencies": {
+    "core-js": "3.6.4",
+    "chartist": "0.11.4",
+    "google-maps": "4.2.3",
+    "vue": "2.6.11",
+    "vue-clickaway": "2.2.2",
+    "vue-github-buttons": "3.1.0",
+    "vue-material": "1.0.0-beta-11",
+    "vue-router": "3.1.6",
+    "vue-social-sharing": "2.4.7"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-clean": "^0.4.0",
-    "gulp-install": "^1.1.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-open": "^3.0.1"
-  },
-  "homepage": "http://demos.creative-tim.com/material-dashboard/examples/dashboard.html?_ga=2.143239282.69692347.1519629130-329288944.1519374311"
+    "@vue/cli-plugin-babel": "4.2.3",
+    "@vue/cli-plugin-eslint": "4.2.3",
+    "@vue/cli-plugin-router": "4.2.3",
+    "@vue/cli-service": "4.2.3",
+    "@vue/eslint-config-prettier": "6.0.0",
+    "babel-eslint": "10.1.0",
+    "eslint": "6.8.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-vue": "6.2.2",
+    "es6-promise": "4.2.8",
+    "prettier": "1.19.1",
+    "sass": "1.26.2",
+    "sass-loader": "8.0.2",
+    "vue-template-compiler": "2.6.11"
+  }
 }

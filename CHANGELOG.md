@@ -1,60 +1,49 @@
 # Change Log
 
-## [2.1.2] 2020-02-11
-### Improvements, BugFixing
-- Fixed the broken links
-- Improvements and BugFixing for documentation
-- Change versions on CSS and JS files
+## [1.4.0] 2020-03-12
+### Dependencies Updates
+- Updated all out of date dependencies from `package.json` file
+- Add `API_KEY` file
+- Add new structure for google maps plugin
 
-## [2.1.1] 2018-11-13
-### Improvements, BugFixing
-- Changes for responsive devices
-- Improvements and BugFixing for documentation
-- Change versions on CSS and JS files
-- Pro Documentation integrated in Free Version
-- Eliminated extra CSS and JS
+## [1.3.2] 2019-12-13
+### Dependencies Updates
+- Updated all out of date dependencies from `package.json` file
+- The version is now `v1.3.2` to have the same versioning line with the PRO version of this product
 
-## [2.1.0] 2018-06-13
-### Bug fixing
-- Card-chart fixed on Windows
-- Bug fixes for responsive devices
-- Small changes for components
+## [1.2.1] 2019-06-14
+### Dependencies Updates, Vue Material Update
+- Updated all out of date dependencies from `package.json` file
+- The framework `Vuematerial.io` was updated to the latest beta version `1.0.0-beta-11`
 
-## [2.0.0] 2018-03-27
-### Bootstrap 4 update
-- Core base code on Bootstrap 4
-- Documentation code base written from scratch
-- Speed optimizations
-- Class changes : .card-block to .card-body
-    - .navbar-toggleable-* to .navbar-expand-*
-    - .hidden-*-down to .d-none .d-*-block
-    - .hidden-*-up to .d-*-none
-    - .checkbox to .form-check
-    - .radio to .form-check
-    - more class changes here:https://getbootstrap.com/docs/4.0/migration/
-- Bug fixes for responsive devices
-- Small changes for components
+## [1.2.0] 2019-04-30
+### Dependencies Updates
+- Updated all out of date dependencies from `package.json` file
 
-## [1.2.0] 2017-09-08
-### BugFixing
-- added PerfectScrollbar for windows better scroll
-- added arrive.js library for dynamic content
-- fix issue with charts when resizing window
-- change size of buttons for notifications on mobile
-- added pagination style
-- fixed issue with Bootstrap modal
-- added fixed navbar
-- documentation updates
-- minor design fixes
+## [1.1.0] 2019-02-08
+### Dependencies Updates, Improvements
+- Updated all out of date dependencies from `package.json` file
+- Removed all `to=""` and replaced with `href=""` props from non router-link components for avoid this error `[Vue warn]: Error in render: "TypeError: Cannot read property 'options' of undefined"`
+- Changed links from footer
 
-## [1.1.1] 2017-02-08
-### MIT License
-- switched to MIT License
+## [1.0.3] 2018-11-26
+### Bug Fixing
+- Fixed error `[Vue warn]: Error in render: "TypeError: Cannot read property 'options' of undefined"`
 
-## [1.1.0] 2016-11-10
-### New Page Added, Small Fixes
-- fix link in documentation
-- for those who want to upsell inside their dashboard we added a new page "Upgrade to PRO" with a pricing and options table
+## [1.0.2] 2018-11-19
+### Plugin Updates, BugFixing
+- Updated all `dependencies` and `devDependencies` to the latest versions
+- Cleaned `package.json` file
+- Removed all lint warnings and errors
+- Github issues fixed
+- Other bug fixes
 
-## [1.0.0] 2016-09-21
-### Initial Release
+## [1.0.1] 2018-07-13
+### BugFixing and Updates
+- updated all the npm packages
+- scroll issue on mobile devices fixed
+- added button `Upgrade to PRO` in the sidebar
+- another small bug fixes
+
+## [1.0.0] 2018-05-03
+- Initial Release
