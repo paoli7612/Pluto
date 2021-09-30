@@ -23,7 +23,7 @@
                                 <div class="col-md-3 px-1">
                                     <div class="form-group">
                                         <label>Username</label>
-                                        <input type="text" class="form-control" placeholder="Username" value="{{ $user->name }}">
+                                        <input type="text" class="form-control" placeholder="Username" value="{{ $user->username }}">
                                     </div>
                                 </div>
                                 <div class="col-md-4 pl-1">
@@ -37,13 +37,13 @@
                                 <div class="col-md-6 pr-1">
                                     <div class="form-group">
                                         <label>First Name</label>
-                                        <input type="text" class="form-control" placeholder="Company" value="Mike">
+                                        <input type="text" class="form-control" placeholder="Company" value="{{ $user->name }}">
                                     </div>
                                 </div>
                                 <div class="col-md-6 pl-1">
                                     <div class="form-group">
                                         <label>Last Name</label>
-                                        <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
+                                        <input type="text" class="form-control" placeholder="Last Name" value="{{ $user->surname }}">
                                     </div>
                                 </div>
                             </div>
