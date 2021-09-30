@@ -30,4 +30,9 @@ class HomeController extends Controller
     {
         return view('account');
     }
+
+    public function lists()
+    {
+        return view('lists');
+    }
 }

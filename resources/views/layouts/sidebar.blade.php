@@ -24,7 +24,7 @@
                 <p>User Profile</p>
             </a>
         </li>
-        <li @if(Request::is('active')) class="active" @endif>
+        <li @if(Request::is('lists')) class="active" @endif>
             <a href="{{ route('lists') }}">
                 <i class="now-ui-icons design_bullet-list-67"></i>
                 <p>Table List</p>
