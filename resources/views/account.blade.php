@@ -75,14 +75,14 @@
                         <div class="author">
                             <a href="#">
                                 <img class="avatar border-gray" src="https://i.pravatar.cc/256" alt="...">
-                                <h5 class="title">Mike Andrew</h5>
+                                <h5 class="title">{{ $user->complete_name }}</h5>
                             </a>
                             <p class="description">
-                                michael24
+                                {{ $user->username }}
                             </p>
                         </div>
                         <p class="description text-center">
-                            "Lamborghini Mercy <br> Your chick she so thirsty <br> I'm in that two seat Lambo"
+                            {{ $user->description }}
                         </p>
                     </div>
                     <hr>
