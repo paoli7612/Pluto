@@ -11,11 +11,6 @@ class HomeController extends Controller
         return view('welcome');
     }
 
-    public function typography()
-    {
-        return view('typography');
-    }
-
     public function icons()
     {
         return view('icons');
@@ -34,5 +29,10 @@ class HomeController extends Controller
     public function lists()
     {
         return view('lists');
+    }
+
+    public function typography()
+    {
+        return view('typography');
     }
 }
