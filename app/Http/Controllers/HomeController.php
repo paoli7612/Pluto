@@ -20,4 +20,14 @@ class HomeController extends Controller
     {
         return view('icons');
     }
+
+    public function notifications()
+    {
+        return view('notifications');
+    }
+
+    public function account()
+    {
+        return view('account');
+    }
 }
