@@ -39,4 +39,9 @@ class HomeController extends Controller
     {
         return view('typography');
     }
+
+    public function settings()
+    {
+        return view('settings');
+    }
 }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,7 @@ Route::get('/notifications', [HomeController::class, 'notifications'])->name('no
 Route::get('/account', [HomeController::class, 'account'])->name('account');
 Route::get('/lists', [HomeController::class, 'lists'])->name('lists');
 Route::get('/typography', [HomeController::class, 'typography'])->name('typography');
+Route::get('/settings', [HomeController::class, 'settings'])->name('settings');
 
 Auth::routes();
 

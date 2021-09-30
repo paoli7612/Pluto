@@ -60,7 +60,8 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                         @auth
-                            <button class="dropdown-item" href="{{ route('account') }}">Account</button>
+                            <a class="dropdown-item" href="{{ route('account') }}">Account</a>
+                            <a class="dropdown-item" href="{{ route('settings') }}">Settings</a>
                             <div class="dropdown-divider"></div>
                             <form action="{{ route('logout') }}" method="post">@csrf
                                 <button type="submit" class="dropdown-item" href="{{ route('logout') }}">Log out</button>
