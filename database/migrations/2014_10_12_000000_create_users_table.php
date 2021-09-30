@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('username')->unique();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->enum('color', ['blue', 'green', 'orange', 'red', 'yellow'])->default('blue');
             $table->string('password');
             $table->text('description')->nullable();
             $table->rememberToken();

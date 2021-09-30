@@ -74,7 +74,7 @@
                     <div class="card-body">
                         <div class="author">
                             <a href="#">
-                                <img class="avatar border-gray" src="https://i.pravatar.cc/256" alt="...">
+                                <img class="avatar border-gray" src="https://i.pravatar.cc/256?u={{ $user->username }}" alt="...">
                                 <h5 class="title">{{ $user->complete_name }}</h5>
                             </a>
                             <p class="description">
