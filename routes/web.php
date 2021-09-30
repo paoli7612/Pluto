@@ -24,3 +24,6 @@ Route::get('/notifications', [HomeController::class, 'notifications'])->name('no
 Route::get('/account', [HomeController::class, 'account'])->name('account');
 Route::get('/lists', [HomeController::class, 'lists'])->name('lists');
 Route::get('/typography', [HomeController::class, 'typography'])->name('typography');
+
+Auth::routes();
+

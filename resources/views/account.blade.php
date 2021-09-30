@@ -98,7 +98,7 @@
                     <div class="card-body">
                         <div class="author">
                             <a href="#">
-                                <img class="avatar border-gray" src="{{ asset('img/mike.jpg') }}" alt="...">
+                                <img class="avatar border-gray" src="https://i.pravatar.cc/256" alt="...">
                                 <h5 class="title">Mike Andrew</h5>
                             </a>
                             <p class="description">
